@@ -1,1 +1,36 @@
+STEP  1 : Here you two options either you install ubuntu server edition OS on your a seocndary laptop or you can install it as a 2nd OS on the same laptop.
+          PLZ note that installing 2ns OS will not allow to USE VS CODE { we will requires vs code to access the serverand its files . so My suggestion is that
+          if you have two laptops than it is super good you can install a server on 1  and work on vs code on 2nd . but if you have one laptop than i highely 
+          recommend you to use virtual OS . 
 
+          just install Oracle VM VirtualBox on windows.
+          now install ubuntu server edition on that virtual box.
+
+STEP  2  :  run the server and do necessary setting . remember the username and password of your  virtual server.
+            after login to server enable the ssh, also open the port required as your laptop proxy aould block some
+            port forwarding , so its better to open them . and change the setting of your laptop so that it will allow
+            ping request from other laptops.
+
+STEP  3  : check the ip address on server by ip a , not the ip address ., now open the VS CODE and install microsoft ssh extension
+          than a small icon will be added at left panel . go there and at top  + icon is there , click there and a input box will
+          appear at top asking for ssh username @ host address.
+
+          here you will enter your ubuntu server username , if you dont remember than at server type whoami , you will get your usrename
+          now .  SSH krrish@192.168.123.107   this type of line you will type at vs code . use the ip address of server here.
+          it will take 5 minutes as vs code installs a package at  ubuntu server . just wait .
+
+STEP  4  : after sucess open folder on same window it will show , the folder dirc. of ubuntu server. also you can add new terminal from
+            above bar options . on which you can run command  to get executed on server . now create dirctory using terminal .
+            if access is denied than use SUDO. or change the username access to that folder to the username of server.
+
+STEP  5  : install apache2 on server , also express js latest editon , note install NVM before using express js 
+            as NVM will provide with latest softaware of node js. install mongodb
+STEP  6 : USE VS CODE to write api endponts using node js , express js , mongodb .
+          if you are asked for ip address in node js use 127.0.0.1 or ip address of your server . also you can do 
+          port forwarding from apache to NODE JS to handle if you want that first request comes to apache than to node js
+         . if you want direct request to node js than no need of apche2 server .
+
+          learn node js , express js , mongosh and thier methods to write effiecint coding. 
+          
+
+          
